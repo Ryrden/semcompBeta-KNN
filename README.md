@@ -85,3 +85,39 @@ A distancia é adaptada conforme a necessidade
 3. Dentre os k exemplos mais próximos descobrir a classe mais frequente
 4. Retornar a classe mais frequente enre os vizinhos mais próximos
 
+Como escolher o K?
+
+#### Escolha de K
+
+- O número de vizinhos é o que chamamos de Hiperparâmetro, isto é, parâmetro que é escolhido/definido antes do treinamento do modelo
+- Para a maioria das tarefas, não existem hiperparâmetros mágicos que sempre funcionam, sendo necessário testar valores diferentes e descobrir qual funciona melhor para o problema
+- Esse processo de teste de hiperparâmetro é realizado utilizando o conjunto de validação
+
+Como esse K influencia ?
+
+![Imagem](https://www.researchgate.net/publication/321554029/figure/fig2/AS:568611275317249@1512578900804/Illustration-of-the-k-nearest-neighbours-kNN-classifier-a-kNN-assigns-a-class-to.png)
+
+Veja que k=3 faz o modelo dizer q é Cinza ao invés de Azul na segunda imagem, mas o dado desejado esta no azul, devemos aumentar o K?
+
+### Observações sobre KNN
+
+O KNN tem resultados rapidos mas treino lento, isso é o que nao queremos, o KNN é apenas didático
+
+- O algoritmo não aprende, ele apenas "memoriza" os dados de treino
+- Adia a parte pesada da computação para a fase de classificação
+    - Para cada amostra de teste, temos que calcular a distância para todas as amostras de treino
+- Classificador não linear, já que não define uma fronteira de decisão com speração linear (exemplo da ultima imagem)
+- É importante utilizar pré-processamento de normalização ou padronização dos dados, uma ez que é computada a dist euclidiana entre as amostras
+
+### Compelxidade de treino e teste
+
+- Idealmente, queremos que o teste/inferência seja rápido
+
+
+## Notas
+
+Jay Alamar Blog - Bom conteúdo sobre dados não estruturados 
+
+A escolha de um K ser impar torna a classificação mais interessante pq haverá uma majoritaria
+
+Exemplo, se K = 2, pode ter 2 classes, mas com K=3 vai ter sempre uma dominante oq melhora a precisão
