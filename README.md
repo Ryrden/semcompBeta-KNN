@@ -95,7 +95,7 @@ Como escolher o K?
 
 Como esse K influencia ?
 
-![Imagem](https://www.researchgate.net/publication/321554029/figure/fig2/AS:568611275317249@1512578900804/Illustration-of-the-k-nearest-neighbours-kNN-classifier-a-kNN-assigns-a-class-to.png)
+![Imagem](https://i.imgur.com/mNixVzK.png)
 
 Veja que k=3 faz o modelo dizer q é Cinza ao invés de Azul na segunda imagem, mas o dado desejado esta no azul, devemos aumentar o K?
 
